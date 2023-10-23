@@ -12,4 +12,5 @@ cursor.execute("DROP TABLE IF EXISTS songs")
 
 df.to_sql("songs", connection)
 
+cursor.execute("SELECT * FROM songs")
 connection.close()
